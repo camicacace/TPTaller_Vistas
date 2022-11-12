@@ -16,6 +16,17 @@ public class VistaCambioContrasenia extends JFrame {
 	private JPanel contentPane;
 	private JTextField textFieldContraseniaAnterior;
 	private JTextField textFieldContraseniaNueva;
+	private JPanel panelCambioContrasenia;
+	private JPanel panelContraseniaAnterior;
+	private JPanel panelLabelContraseniaAnterior;
+	private JLabel LabelContraseniaAnterior;
+	private JPanel panelTextContraseniaAnterior;
+	private JPanel panelContrseniaNueva;
+	private JPanel panelLabeContraseniaNueva;
+	private JLabel LabelContraseniaNueva;
+	private JPanel panelTextContraseniaNueva;
+	private JPanel panelBotonAceptar;
+	private JButton BotonAceptar;
 
 	/**
 	 * Launch the application.
@@ -44,48 +55,48 @@ public class VistaCambioContrasenia extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		JPanel panelCambioContrasenia = new JPanel();
+		panelCambioContrasenia = new JPanel();
 		contentPane.add(panelCambioContrasenia, BorderLayout.CENTER);
 		panelCambioContrasenia.setLayout(new GridLayout(3, 0, 0, 0));
 		
-		JPanel panelContraseniaAnterior = new JPanel();
+		panelContraseniaAnterior = new JPanel();
 		panelCambioContrasenia.add(panelContraseniaAnterior);
 		panelContraseniaAnterior.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelContraseniaAnterior = new JPanel();
+		panelLabelContraseniaAnterior = new JPanel();
 		panelContraseniaAnterior.add(panelLabelContraseniaAnterior);
 		
-		JLabel LabelContraseniaAnterior = new JLabel("Contrasenia anterior:");
+		LabelContraseniaAnterior = new JLabel("Contrasenia anterior:");
 		panelLabelContraseniaAnterior.add(LabelContraseniaAnterior);
 		
-		JPanel panelTextContraseniaAnterior = new JPanel();
+		panelTextContraseniaAnterior = new JPanel();
 		panelContraseniaAnterior.add(panelTextContraseniaAnterior);
 		
 		textFieldContraseniaAnterior = new JTextField();
 		panelTextContraseniaAnterior.add(textFieldContraseniaAnterior);
 		textFieldContraseniaAnterior.setColumns(10);
 		
-		JPanel panelContrseniaNueva = new JPanel();
+		panelContrseniaNueva = new JPanel();
 		panelCambioContrasenia.add(panelContrseniaNueva);
 		panelContrseniaNueva.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabeContraseniaNueva = new JPanel();
+		panelLabeContraseniaNueva = new JPanel();
 		panelContrseniaNueva.add(panelLabeContraseniaNueva);
 		
-		JLabel LabelContraseniaNueva = new JLabel("Nueva contrasenia:");
+		LabelContraseniaNueva = new JLabel("Nueva contrasenia:");
 		panelLabeContraseniaNueva.add(LabelContraseniaNueva);
 		
-		JPanel panelTextContraseniaNueva = new JPanel();
+		panelTextContraseniaNueva = new JPanel();
 		panelContrseniaNueva.add(panelTextContraseniaNueva);
 		
 		textFieldContraseniaNueva = new JTextField();
 		panelTextContraseniaNueva.add(textFieldContraseniaNueva);
 		textFieldContraseniaNueva.setColumns(10);
 		
-		JPanel panelBotonAceptar = new JPanel();
+		panelBotonAceptar = new JPanel();
 		panelCambioContrasenia.add(panelBotonAceptar);
 		
-		JButton BotonAceptar = new JButton("Aceptar");
+		BotonAceptar = new JButton("Aceptar");
 		panelBotonAceptar.add(BotonAceptar);
 	}
 

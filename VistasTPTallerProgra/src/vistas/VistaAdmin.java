@@ -12,6 +12,23 @@ import javax.swing.JButton;
 public class VistaAdmin extends JFrame {
 
 	private JPanel contentPane;
+	private JPanel panelAdmin;
+	private JPanel panelModificarOperarios;
+	private JButton botonOperarios;
+	private JPanel panelModificarMozos;
+	private JButton botonMozos;
+	private JPanel panelModificarMesas;
+	private JButton botonMesas;
+	private JPanel panelModificarProductos;
+	private JButton botonProductos;
+	private JPanel panelAsignarMozos;
+	private JButton botonAsignarMozos;
+	private JPanel panelCrearPedidos;
+	private JButton botonCrearPedido;
+	private JPanel panelCerrarMesa;
+	private JButton botonCerrarMesa;
+	private JPanel panelDatosEstadisticos;
+	private JButton botonEstadisticas;
 
 	/**
 	 * Launch the application.
@@ -40,56 +57,56 @@ public class VistaAdmin extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		JPanel panelAdmin = new JPanel();
+		panelAdmin = new JPanel();
 		contentPane.add(panelAdmin, BorderLayout.CENTER);
 		panelAdmin.setLayout(new GridLayout(4, 0, 0, 0));
 		
-		JPanel panelModificarOperarios = new JPanel();
+		panelModificarOperarios = new JPanel();
 		panelAdmin.add(panelModificarOperarios);
 		
-		JButton botonOperarios = new JButton("Modificar Operarios");
+		botonOperarios = new JButton("Modificar Operarios");
 		panelModificarOperarios.add(botonOperarios);
 		
-		JPanel panelModificarMozos = new JPanel();
+		panelModificarMozos = new JPanel();
 		panelAdmin.add(panelModificarMozos);
 		
-		JButton botonMozos = new JButton("Modificar Mozos");
+		botonMozos = new JButton("Modificar Mozos");
 		panelModificarMozos.add(botonMozos);
 		
-		JPanel panelModificarMesas = new JPanel();
+		panelModificarMesas = new JPanel();
 		panelAdmin.add(panelModificarMesas);
 		
-		JButton botonMesas = new JButton("Modificar Mesas");
+		botonMesas = new JButton("Modificar Mesas");
 		panelModificarMesas.add(botonMesas);
 		
-		JPanel panelModificarProductos = new JPanel();
+		panelModificarProductos = new JPanel();
 		panelAdmin.add(panelModificarProductos);
 		
-		JButton botonProductos = new JButton("Modificar Productos");
+		botonProductos = new JButton("Modificar Productos");
 		panelModificarProductos.add(botonProductos);
 		
-		JPanel panelAsignarMozos = new JPanel();
+		panelAsignarMozos = new JPanel();
 		panelAdmin.add(panelAsignarMozos);
 		
-		JButton botonAsignarMozos = new JButton("Asignar Mesa - Mozo");
+		botonAsignarMozos = new JButton("Asignar Mesa - Mozo");
 		panelAsignarMozos.add(botonAsignarMozos);
 		
-		JPanel panelCrearPedidos = new JPanel();
+		panelCrearPedidos = new JPanel();
 		panelAdmin.add(panelCrearPedidos);
 		
-		JButton botonCrearPedido = new JButton("Crear pedido");
+		botonCrearPedido = new JButton("Crear pedido");
 		panelCrearPedidos.add(botonCrearPedido);
 		
-		JPanel panelCerrarMesa = new JPanel();
+		panelCerrarMesa = new JPanel();
 		panelAdmin.add(panelCerrarMesa);
 		
-		JButton botonCerrarMesa = new JButton("Cerrar mesa");
+		botonCerrarMesa = new JButton("Cerrar mesa");
 		panelCerrarMesa.add(botonCerrarMesa);
 		
-		JPanel panelDatosEstadisticos = new JPanel();
+		panelDatosEstadisticos = new JPanel();
 		panelAdmin.add(panelDatosEstadisticos);
 		
-		JButton botonEstadisticas = new JButton("Obtener estadisticas");
+		botonEstadisticas = new JButton("Obtener estadisticas");
 		panelDatosEstadisticos.add(botonEstadisticas);
 	}
 

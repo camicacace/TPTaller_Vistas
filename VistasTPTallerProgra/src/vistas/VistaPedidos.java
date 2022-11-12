@@ -17,6 +17,30 @@ import javax.swing.JSpinner;
 public class VistaPedidos extends JFrame {
 
 	private JPanel contentPane;
+	private JPanel panelPedidos;
+	private JPanel panelMesas;
+	private JScrollPane scrollPaneMesas;
+	private JList listMesas;
+	private JPanel panelBotonAgregarComanda;
+	private JButton botonAgregarComanda;
+	private JPanel panelProducto;
+	private JPanel panelAgregoPedido;
+	private JPanel panelLabelProducto;
+	private JLabel labelProducto;
+	private JPanel panelComboBoxProducto;
+	private JComboBox comboBoxProducto;
+	private JPanel panelCantidad;
+	private JPanel panelLabelCantidad;
+	private JLabel labelCantidad;
+	private JPanel panelSpinnerCantidad;
+	private JSpinner spinnerCantidad;
+	private JPanel panelBotonAgregarPedido;
+	private JButton botonAgregarPedido;
+	private JPanel panelListaPedidos;
+	private JScrollPane scrollPanePedidos;
+	private JList listPedidos;
+	private JPanel panelBotonVolver;
+	private JButton botonVolver;
 
 	/**
 	 * Launch the application.
@@ -45,82 +69,82 @@ public class VistaPedidos extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		JPanel panelPedidos = new JPanel();
+		panelPedidos = new JPanel();
 		contentPane.add(panelPedidos, BorderLayout.CENTER);
 		panelPedidos.setLayout(new GridLayout(0, 3, 0, 0));
 		
-		JPanel panelMesas = new JPanel();
+		panelMesas = new JPanel();
 		panelPedidos.add(panelMesas);
 		panelMesas.setLayout(new GridLayout(2, 0, 0, 0));
 		
-		JScrollPane scrollPaneMesas = new JScrollPane();
+		scrollPaneMesas = new JScrollPane();
 		panelMesas.add(scrollPaneMesas);
 		
-		JList listMesas = new JList();
+		listMesas = new JList();
 		scrollPaneMesas.setViewportView(listMesas);
 		
-		JPanel panelBotonAgregarComanda = new JPanel();
+		panelBotonAgregarComanda = new JPanel();
 		panelMesas.add(panelBotonAgregarComanda);
 		
-		JButton botonAgregarComanda = new JButton("Agregar comanda");
+		botonAgregarComanda = new JButton("Agregar comanda");
 		panelBotonAgregarComanda.add(botonAgregarComanda);
 		
-		JPanel panelAgregoPedido = new JPanel();
+		panelAgregoPedido = new JPanel();
 		panelPedidos.add(panelAgregoPedido);
 		panelAgregoPedido.setLayout(new GridLayout(3, 0, 0, 0));
 		
-		JPanel panelProducto = new JPanel();
+		panelProducto = new JPanel();
 		panelAgregoPedido.add(panelProducto);
 		panelProducto.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelProducto = new JPanel();
+		panelLabelProducto = new JPanel();
 		panelProducto.add(panelLabelProducto);
 		
-		JLabel labelProducto = new JLabel("Producto: ");
+		labelProducto = new JLabel("Producto: ");
 		panelLabelProducto.add(labelProducto);
 		
-		JPanel panelComboBoxProducto = new JPanel();
+		panelComboBoxProducto = new JPanel();
 		panelProducto.add(panelComboBoxProducto);
 		
-		JComboBox comboBoxProducto = new JComboBox();
+		comboBoxProducto = new JComboBox();
 		panelComboBoxProducto.add(comboBoxProducto);
 		
-		JPanel panelCantidad = new JPanel();
+		panelCantidad = new JPanel();
 		panelAgregoPedido.add(panelCantidad);
 		panelCantidad.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelCantidad = new JPanel();
+		panelLabelCantidad = new JPanel();
 		panelCantidad.add(panelLabelCantidad);
 		
-		JLabel labelCantidad = new JLabel("Cantidad:");
+		labelCantidad = new JLabel("Cantidad:");
 		panelLabelCantidad.add(labelCantidad);
 		
-		JPanel panelSpinnerCantidad = new JPanel();
+		panelSpinnerCantidad = new JPanel();
 		panelCantidad.add(panelSpinnerCantidad);
 		
-		JSpinner spinnerCantidad = new JSpinner();
+		spinnerCantidad = new JSpinner();
 		panelSpinnerCantidad.add(spinnerCantidad);
 		
-		JPanel panelBotonAgregarPedido = new JPanel();
+		panelBotonAgregarPedido = new JPanel();
 		panelAgregoPedido.add(panelBotonAgregarPedido);
 		
-		JButton botonAgregarPedido = new JButton("Agregar pedido");
+		botonAgregarPedido = new JButton("Agregar pedido");
 		panelBotonAgregarPedido.add(botonAgregarPedido);
 		
-		JPanel panelListaPedidos = new JPanel();
+		panelListaPedidos = new JPanel();
 		panelPedidos.add(panelListaPedidos);
 		panelListaPedidos.setLayout(new GridLayout(2, 0, 0, 0));
 		
-		JScrollPane scrollPanePedidos = new JScrollPane();
+		scrollPanePedidos = new JScrollPane();
 		panelListaPedidos.add(scrollPanePedidos);
 		
-		JList listPedidos = new JList();
+		listPedidos = new JList();
 		scrollPanePedidos.setViewportView(listPedidos);
 		
-		JPanel panelBotonVolver = new JPanel();
+		panelBotonVolver = new JPanel();
 		panelListaPedidos.add(panelBotonVolver);
 		
-		JButton botonVolver = new JButton("Volver");
+		botonVolver = new JButton("Volver");
 		panelBotonVolver.add(botonVolver);
 	}
 

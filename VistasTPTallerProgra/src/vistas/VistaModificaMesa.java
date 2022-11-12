@@ -18,6 +18,26 @@ public class VistaModificaMesa extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textFieldNroMesa;
+	private JPanel panelModificaMesa;
+	private JPanel panelAgregaMesa;
+	private JPanel panelNroMesa;
+	private JPanel panelLabelNroMesa;
+	private JPanel panelTextNroMesa;
+	private JLabel labelNroMesa;
+	private JPanel panelComensales;
+	private JPanel panelLabelComensales;
+	private JLabel labelComnesales;
+	private JPanel panelSpinnerComensales;
+	private JSpinner spinnerCantComensales;
+	private JPanel panelBotonAgregar;
+	private JButton botonAgregar;
+	private JPanel panelEliminarMesa;
+	private JScrollPane scrollPaneMesas;
+	private JList listMesas;
+	private JPanel panelBotonEliminar;
+	private JButton botonEliminar;
+	private JPanel panelBotonVolver;
+	private JButton botonVolver;
 
 	/**
 	 * Launch the application.
@@ -46,73 +66,73 @@ public class VistaModificaMesa extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		JPanel panelModificaMesa = new JPanel();
+		panelModificaMesa = new JPanel();
 		contentPane.add(panelModificaMesa, BorderLayout.CENTER);
 		panelModificaMesa.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelAgregaMesa = new JPanel();
+		panelAgregaMesa = new JPanel();
 		panelModificaMesa.add(panelAgregaMesa);
 		panelAgregaMesa.setLayout(new GridLayout(3, 0, 0, 0));
 		
-		JPanel panelNroMesa = new JPanel();
+		panelNroMesa = new JPanel();
 		panelAgregaMesa.add(panelNroMesa);
 		panelNroMesa.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelNroMesa = new JPanel();
+		panelLabelNroMesa = new JPanel();
 		panelNroMesa.add(panelLabelNroMesa);
 		
-		JLabel labelNroMesa = new JLabel("Numero de mesa:");
+		labelNroMesa = new JLabel("Numero de mesa:");
 		panelLabelNroMesa.add(labelNroMesa);
 		
-		JPanel panelTextNroMesa = new JPanel();
+		panelTextNroMesa = new JPanel();
 		panelNroMesa.add(panelTextNroMesa);
 		
 		textFieldNroMesa = new JTextField();
 		panelTextNroMesa.add(textFieldNroMesa);
 		textFieldNroMesa.setColumns(10);
 		
-		JPanel panelComensales = new JPanel();
+		panelComensales = new JPanel();
 		panelAgregaMesa.add(panelComensales);
 		panelComensales.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelComensales = new JPanel();
+		panelLabelComensales = new JPanel();
 		panelComensales.add(panelLabelComensales);
 		
-		JLabel labelComnesales = new JLabel("Cantidad de comensales:");
+		labelComnesales = new JLabel("Cantidad de comensales:");
 		panelLabelComensales.add(labelComnesales);
 		
-		JPanel panelSpinnerComensales = new JPanel();
+		panelSpinnerComensales = new JPanel();
 		panelComensales.add(panelSpinnerComensales);
 		
-		JSpinner spinnerCantComensales = new JSpinner();
+		spinnerCantComensales = new JSpinner();
 		panelSpinnerComensales.add(spinnerCantComensales);
 		
-		JPanel panelBotonAgregar = new JPanel();
+		panelBotonAgregar = new JPanel();
 		panelAgregaMesa.add(panelBotonAgregar);
 		
-		JButton botonAgregar = new JButton("Agregar");
+		botonAgregar = new JButton("Agregar");
 		panelBotonAgregar.add(botonAgregar);
 		
-		JPanel panelEliminarMesa = new JPanel();
+		panelEliminarMesa = new JPanel();
 		panelModificaMesa.add(panelEliminarMesa);
 		panelEliminarMesa.setLayout(new GridLayout(3, 0, 0, 0));
 		
-		JScrollPane scrollPaneMesas = new JScrollPane();
+		scrollPaneMesas = new JScrollPane();
 		panelEliminarMesa.add(scrollPaneMesas);
 		
-		JList listMesas = new JList();
+		listMesas = new JList();
 		scrollPaneMesas.setViewportView(listMesas);
 		
-		JPanel panelBotonEliminar = new JPanel();
+		panelBotonEliminar = new JPanel();
 		panelEliminarMesa.add(panelBotonEliminar);
 		
-		JButton botonEliminar = new JButton("Eliminar");
+		botonEliminar = new JButton("Eliminar");
 		panelBotonEliminar.add(botonEliminar);
 		
-		JPanel panelBotonVolver = new JPanel();
+		panelBotonVolver = new JPanel();
 		panelEliminarMesa.add(panelBotonVolver);
 		
-		JButton botonVolver = new JButton("Volver");
+		botonVolver = new JButton("Volver");
 		panelBotonVolver.add(botonVolver);
 	}
 

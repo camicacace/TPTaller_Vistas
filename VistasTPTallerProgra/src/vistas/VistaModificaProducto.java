@@ -21,6 +21,35 @@ public class VistaModificaProducto extends JFrame {
 	private JTextField textFieldCosto;
 	private JTextField textFieldVenta;
 	private JTextField textFieldStock;
+	private JPanel panelModificaProducto;
+	private JPanel panelAgregar;
+	private JPanel panelID;
+	private JPanel panelLabelID;
+	private JLabel labelID;
+	private JPanel panelTextID;
+	private JPanel panelLabelNombre;
+	private JLabel labelNombre;
+	private JPanel panelTextNombre;
+	private JPanel panelCosto;
+	private JPanel panelLabelCosto;
+	private JLabel labelCosto;
+	private JPanel panelTextCosto;
+	private JPanel panelVenta;
+	private JPanel panelLabelVenta;
+	private JLabel labelVenta;
+	private JPanel panelTextVenta;
+	private JPanel panelStock;
+	private JPanel panelLabelStock;
+	private JLabel labelStock;
+	private JPanel panelTextStock;
+	private JPanel panelBotonAgregar;
+	private JButton botonAgregar;
+	private JScrollPane scrollPaneProductos;
+	private JList listProductos;
+	private JPanel panelBotonEliminar;
+	private JButton botonEliminar;
+	private JPanel panelBotonVolver;
+	private JButton botonVolver;
 
 	/**
 	 * Launch the application.
@@ -49,25 +78,25 @@ public class VistaModificaProducto extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		JPanel panelModificaProducto = new JPanel();
+		panelModificaProducto = new JPanel();
 		contentPane.add(panelModificaProducto, BorderLayout.CENTER);
 		panelModificaProducto.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelAgregar = new JPanel();
+		panelAgregar = new JPanel();
 		panelModificaProducto.add(panelAgregar);
 		panelAgregar.setLayout(new GridLayout(6, 0, 0, 0));
 		
-		JPanel panelID = new JPanel();
+		panelID = new JPanel();
 		panelAgregar.add(panelID);
 		panelID.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelID = new JPanel();
+		panelLabelID = new JPanel();
 		panelID.add(panelLabelID);
 		
-		JLabel labelID = new JLabel("ID:");
+		labelID = new JLabel("ID:");
 		panelLabelID.add(labelID);
 		
-		JPanel panelTextID = new JPanel();
+		panelTextID = new JPanel();
 		panelID.add(panelTextID);
 		
 		textFieldID = new JTextField();
@@ -78,96 +107,96 @@ public class VistaModificaProducto extends JFrame {
 		panelAgregar.add(panelNombre);
 		panelNombre.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelNombre = new JPanel();
+		panelLabelNombre = new JPanel();
 		panelNombre.add(panelLabelNombre);
 		
-		JLabel labelNombre = new JLabel("Nombre:");
+		labelNombre = new JLabel("Nombre:");
 		panelLabelNombre.add(labelNombre);
 		
-		JPanel panelTextNombre = new JPanel();
+		panelTextNombre = new JPanel();
 		panelNombre.add(panelTextNombre);
 		
 		textFieldNombre = new JTextField();
 		panelTextNombre.add(textFieldNombre);
 		textFieldNombre.setColumns(10);
 		
-		JPanel panelCosto = new JPanel();
+		panelCosto = new JPanel();
 		panelAgregar.add(panelCosto);
 		panelCosto.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelCosto = new JPanel();
+		panelLabelCosto = new JPanel();
 		panelCosto.add(panelLabelCosto);
 		
-		JLabel labelCosto = new JLabel("Precio costo:");
+		labelCosto = new JLabel("Precio costo:");
 		panelLabelCosto.add(labelCosto);
 		
-		JPanel panelTextCosto = new JPanel();
+		panelTextCosto = new JPanel();
 		panelCosto.add(panelTextCosto);
 		
 		textFieldCosto = new JTextField();
 		panelTextCosto.add(textFieldCosto);
 		textFieldCosto.setColumns(10);
 		
-		JPanel panelVenta = new JPanel();
+		panelVenta = new JPanel();
 		panelAgregar.add(panelVenta);
 		panelVenta.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelVenta = new JPanel();
+		panelLabelVenta = new JPanel();
 		panelVenta.add(panelLabelVenta);
 		
-		JLabel labelVenta = new JLabel("Precio venta:");
+		labelVenta = new JLabel("Precio venta:");
 		panelLabelVenta.add(labelVenta);
 		
-		JPanel panelTextVenta = new JPanel();
+		panelTextVenta = new JPanel();
 		panelVenta.add(panelTextVenta);
 		
 		textFieldVenta = new JTextField();
 		panelTextVenta.add(textFieldVenta);
 		textFieldVenta.setColumns(10);
 		
-		JPanel panelStock = new JPanel();
+		panelStock = new JPanel();
 		panelAgregar.add(panelStock);
 		panelStock.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelStock = new JPanel();
+		panelLabelStock = new JPanel();
 		panelStock.add(panelLabelStock);
 		
-		JLabel labelStock = new JLabel("Stock inicial:");
+		labelStock = new JLabel("Stock inicial:");
 		panelLabelStock.add(labelStock);
 		
-		JPanel panelTextStock = new JPanel();
+		panelTextStock = new JPanel();
 		panelStock.add(panelTextStock);
 		
 		textFieldStock = new JTextField();
 		panelTextStock.add(textFieldStock);
 		textFieldStock.setColumns(10);
 		
-		JPanel panelBotonAgregar = new JPanel();
+		panelBotonAgregar = new JPanel();
 		panelAgregar.add(panelBotonAgregar);
 		
-		JButton botonAgregar = new JButton("Agregar");
+		botonAgregar = new JButton("Agregar");
 		panelBotonAgregar.add(botonAgregar);
 		
 		JPanel panelEliminar = new JPanel();
 		panelModificaProducto.add(panelEliminar);
 		panelEliminar.setLayout(new GridLayout(3, 0, 0, 0));
 		
-		JScrollPane scrollPaneProductos = new JScrollPane();
+		scrollPaneProductos = new JScrollPane();
 		panelEliminar.add(scrollPaneProductos);
 		
-		JList listProductos = new JList();
+		listProductos = new JList();
 		scrollPaneProductos.setViewportView(listProductos);
 		
-		JPanel panelBotonEliminar = new JPanel();
+		panelBotonEliminar = new JPanel();
 		panelEliminar.add(panelBotonEliminar);
 		
-		JButton botonEliminar = new JButton("Eliminar");
+		botonEliminar = new JButton("Eliminar");
 		panelBotonEliminar.add(botonEliminar);
 		
-		JPanel panelBotonVolver = new JPanel();
+		panelBotonVolver = new JPanel();
 		panelEliminar.add(panelBotonVolver);
 		
-		JButton botonVolver = new JButton("Volver");
+		botonVolver = new JButton("Volver");
 		panelBotonVolver.add(botonVolver);
 	}
 

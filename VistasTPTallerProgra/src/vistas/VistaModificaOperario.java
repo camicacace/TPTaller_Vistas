@@ -20,6 +20,32 @@ public class VistaModificaOperario extends JFrame {
 	private JTextField textFieldApellido;
 	private JTextField textFieldNombreUsuario;
 	private JTextField textFieldContrasenia;
+	private JPanel panelModificaOperario;
+	private JPanel panelEliminarOperario;
+	private JScrollPane scrollPaneOperarios;
+	private JList listOperarios;
+	private JPanel panelBotones;
+	private JPanel panelBotonEliminar;
+	private JButton botonEliminar;
+	private JPanel panelBotonVolver;
+	private JButton botonVolver;
+	private JPanel panelAgregarOperario;
+	private JPanel panelNombre;
+	private JPanel panelLabelNombre;
+	private JLabel labelNombre;
+	private JPanel panelTextNombre;
+	private JPanel panelLabelApellido;
+	private JLabel labelApellido;
+	private JPanel panelTextApellido;
+	private JPanel panelLabelNombreUsuario;
+	private JLabel labelNombreUsuario;
+	private JPanel panelTextNombreUsuario;
+	private JPanel panelContrasenia;
+	private JPanel panelLabelContrasenia;
+	private JLabel labelContrasenia;
+	private JPanel panelTextContrasenia;
+	private JPanel panelBotonAgregar;
+	private JButton botonAgregar;
 
 	/**
 	 * Launch the application.
@@ -48,51 +74,51 @@ public class VistaModificaOperario extends JFrame {
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
 		
-		JPanel panelModificaOperario = new JPanel();
+		panelModificaOperario = new JPanel();
 		contentPane.add(panelModificaOperario, BorderLayout.CENTER);
 		panelModificaOperario.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelEliminarOperario = new JPanel();
+		panelEliminarOperario = new JPanel();
 		panelModificaOperario.add(panelEliminarOperario);
 		panelEliminarOperario.setLayout(new GridLayout(2, 0, 0, 0));
 		
-		JScrollPane scrollPaneOperarios = new JScrollPane();
+		scrollPaneOperarios = new JScrollPane();
 		panelEliminarOperario.add(scrollPaneOperarios);
 		
-		JList listOperarios = new JList();
+		listOperarios = new JList();
 		scrollPaneOperarios.setViewportView(listOperarios);
 		
-		JPanel panelBotones = new JPanel();
+		panelBotones = new JPanel();
 		panelEliminarOperario.add(panelBotones);
 		panelBotones.setLayout(new GridLayout(2, 1, 0, 0));
 		
-		JPanel panelBotonEliminar = new JPanel();
+		panelBotonEliminar = new JPanel();
 		panelBotones.add(panelBotonEliminar);
 		
-		JButton botonEliminar = new JButton("Eliminar");
+		botonEliminar = new JButton("Eliminar");
 		panelBotonEliminar.add(botonEliminar);
 		
-		JPanel panelBotonVolver = new JPanel();
+		panelBotonVolver = new JPanel();
 		panelBotones.add(panelBotonVolver);
 		
-		JButton botonVolver = new JButton("Volver");
+		botonVolver = new JButton("Volver");
 		panelBotonVolver.add(botonVolver);
 		
-		JPanel panelAgregarOperario = new JPanel();
+		panelAgregarOperario = new JPanel();
 		panelModificaOperario.add(panelAgregarOperario);
 		panelAgregarOperario.setLayout(new GridLayout(5, 0, 0, 0));
 		
-		JPanel panelNombre = new JPanel();
+		panelNombre = new JPanel();
 		panelAgregarOperario.add(panelNombre);
 		panelNombre.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelNombre = new JPanel();
+		panelLabelNombre = new JPanel();
 		panelNombre.add(panelLabelNombre);
 		
-		JLabel labelNombre = new JLabel("Nombre:");
+		labelNombre = new JLabel("Nombre:");
 		panelLabelNombre.add(labelNombre);
 		
-		JPanel panelTextNombre = new JPanel();
+		panelTextNombre = new JPanel();
 		panelNombre.add(panelTextNombre);
 		
 		textFieldNombre = new JTextField();
@@ -103,13 +129,13 @@ public class VistaModificaOperario extends JFrame {
 		panelAgregarOperario.add(panelApellido);
 		panelApellido.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelApellido = new JPanel();
+		panelLabelApellido = new JPanel();
 		panelApellido.add(panelLabelApellido);
 		
-		JLabel labelApellido = new JLabel("Apellido:");
+		labelApellido = new JLabel("Apellido:");
 		panelLabelApellido.add(labelApellido);
 		
-		JPanel panelTextApellido = new JPanel();
+		panelTextApellido = new JPanel();
 		panelApellido.add(panelTextApellido);
 		
 		textFieldApellido = new JTextField();
@@ -120,40 +146,40 @@ public class VistaModificaOperario extends JFrame {
 		panelAgregarOperario.add(panelNombreUsuario);
 		panelNombreUsuario.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelNombreUsuario = new JPanel();
+		panelLabelNombreUsuario = new JPanel();
 		panelNombreUsuario.add(panelLabelNombreUsuario);
 		
-		JLabel labelNombreUsuario = new JLabel("Nombre de usuario:");
+		labelNombreUsuario = new JLabel("Nombre de usuario:");
 		panelLabelNombreUsuario.add(labelNombreUsuario);
 		
-		JPanel panelTextNombreUsuario = new JPanel();
+		panelTextNombreUsuario = new JPanel();
 		panelNombreUsuario.add(panelTextNombreUsuario);
 		
 		textFieldNombreUsuario = new JTextField();
 		panelTextNombreUsuario.add(textFieldNombreUsuario);
 		textFieldNombreUsuario.setColumns(10);
 		
-		JPanel panelContrasenia = new JPanel();
+		panelContrasenia = new JPanel();
 		panelAgregarOperario.add(panelContrasenia);
 		panelContrasenia.setLayout(new GridLayout(0, 2, 0, 0));
 		
-		JPanel panelLabelContrasenia = new JPanel();
+		panelLabelContrasenia = new JPanel();
 		panelContrasenia.add(panelLabelContrasenia);
 		
-		JLabel labelContrasenia = new JLabel("Contrasenia:");
+		labelContrasenia = new JLabel("Contrasenia:");
 		panelLabelContrasenia.add(labelContrasenia);
 		
-		JPanel panelTextContrasenia = new JPanel();
+		panelTextContrasenia = new JPanel();
 		panelContrasenia.add(panelTextContrasenia);
 		
 		textFieldContrasenia = new JTextField();
 		panelTextContrasenia.add(textFieldContrasenia);
 		textFieldContrasenia.setColumns(10);
 		
-		JPanel panelBotonAgregar = new JPanel();
+		panelBotonAgregar = new JPanel();
 		panelAgregarOperario.add(panelBotonAgregar);
 		
-		JButton botonAgregar = new JButton("Agregar");
+		botonAgregar = new JButton("Agregar");
 		panelBotonAgregar.add(botonAgregar);
 	}
 
