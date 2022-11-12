@@ -42,7 +42,7 @@ public class VistaAdmin extends JFrame {
 		
 		JPanel panelAdmin = new JPanel();
 		contentPane.add(panelAdmin, BorderLayout.CENTER);
-		panelAdmin.setLayout(new GridLayout(5, 0, 0, 0));
+		panelAdmin.setLayout(new GridLayout(4, 0, 0, 0));
 		
 		JPanel panelModificarOperarios = new JPanel();
 		panelAdmin.add(panelModificarOperarios);
@@ -73,6 +73,24 @@ public class VistaAdmin extends JFrame {
 		
 		JButton botonAsignarMozos = new JButton("Asignar Mesa - Mozo");
 		panelAsignarMozos.add(botonAsignarMozos);
+		
+		JPanel panelCrearPedidos = new JPanel();
+		panelAdmin.add(panelCrearPedidos);
+		
+		JButton botonCrearPedido = new JButton("Crear pedido");
+		panelCrearPedidos.add(botonCrearPedido);
+		
+		JPanel panelCerrarMesa = new JPanel();
+		panelAdmin.add(panelCerrarMesa);
+		
+		JButton botonCerrarMesa = new JButton("Cerrar mesa");
+		panelCerrarMesa.add(botonCerrarMesa);
+		
+		JPanel panelDatosEstadisticos = new JPanel();
+		panelAdmin.add(panelDatosEstadisticos);
+		
+		JButton botonEstadisticas = new JButton("Obtener estadisticas");
+		panelDatosEstadisticos.add(botonEstadisticas);
 	}
 
 }
